@@ -3,6 +3,6 @@ const users = require('./users/userRoutes');
 
 const server = express();
 server.use(express.json());
-server.use('/api/register', users)
+server.use('/api/', users)
 
 module.exports = server;
